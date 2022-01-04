@@ -49,8 +49,8 @@ function baya_rose_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'baya-rose' ),
-			'menu-nav' => 'Menu nav icons'
+			'menu-1' => esc_html__( 'primary', 'baya-rose' ),
+			'menu-nav' => 'menu-nav-icons'
 		)
 	);
 

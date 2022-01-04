@@ -111,3 +111,58 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Header
 --------------------------------------------- */
+#masthead {
+	background-color: #B59D92;
+	display: flex;
+	justify-content: space-between;
+	.custom-logo {
+		max-width: 280px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 40px;
+	}
+	nav {
+		max-width:fit-content;
+		margin-right: 40px;
+		#menu {
+			display: flex;
+			flex-direction: row;
+			margin-top: 30px;
+			a {
+				color: #fff;
+				font-size: 22px;
+			}
+			a:hover {
+				color: #A4CBAD;
+			}
+			#primary {
+				display: flex;
+				justify-content: space-around;
+				min-width: 350px;
+				margin-right: 30px;
+				.dropdown-link {
+					background-color: #C5B3AA;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					a {
+						color: #fff;
+						margin-left: 5px;
+					}
+					a:hover {
+						color: #CCE1A3;
+					}
+				}
+			}
+			#menu-nav-icons {
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				min-width: 150px;
+				i {
+					font-size: 40px;
+					margin-top: -5px;
+				}
+			}
+		}
+	}
+}

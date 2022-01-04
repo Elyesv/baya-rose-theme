@@ -622,7 +622,6 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100%;
 }
 .main-navigation ul {
   display: none;
@@ -632,8 +631,8 @@ textarea {
 }
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 100%;
   left: -999em;
   z-index: 99999;
@@ -1401,5 +1400,60 @@ p.no-comments {
 --------------------------------------------- */
 /* Header
 --------------------------------------------- */
+#masthead {
+  background-color: #B59D92;
+  display: flex;
+  justify-content: space-between;
+}
+#masthead .custom-logo {
+  max-width: 280px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+#masthead nav {
+  max-width: fit-content;
+  margin-right: 40px;
+}
+#masthead nav #menu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+#masthead nav #menu a {
+  color: #fff;
+  font-size: 22px;
+}
+#masthead nav #menu a:hover {
+  color: #A4CBAD;
+}
+#masthead nav #menu #primary {
+  display: flex;
+  justify-content: space-around;
+  min-width: 350px;
+  margin-right: 30px;
+}
+#masthead nav #menu #primary .dropdown-link {
+  background-color: #C5B3AA;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#masthead nav #menu #primary .dropdown-link a {
+  color: #fff;
+  margin-left: 5px;
+}
+#masthead nav #menu #primary .dropdown-link a:hover {
+  color: #CCE1A3;
+}
+#masthead nav #menu #menu-nav-icons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  min-width: 150px;
+}
+#masthead nav #menu #menu-nav-icons i {
+  font-size: 40px;
+  margin-top: -5px;
+}
 
 /*# sourceMappingURL=woocommerce.css.map */

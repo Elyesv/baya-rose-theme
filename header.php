@@ -33,23 +33,23 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'baya-rose' ); ?></button>
-			<div>
-				<div>
+			<div id="menu">
+				<div class="menu-container" id="nav-textes">
 					<?php
 					wp_nav_menu(
 						array(
 							'theme_location' => 'menu-1',
-							'menu_id'        => 'Primary',
+							'menu_id'        => 'primary',
 						)
 					);
 					?>
 				</div>
-				<div>
+				<div class="menu-container" id="nav-icons">
 					<?php
 					wp_nav_menu(
 						array(
 							'theme_location' => 'menu-nav',
-							'menu_id'        => 'Menu nav icons',
+							'menu_id'        => 'menu-nav-icons',
 						)
 					);
 					?>
