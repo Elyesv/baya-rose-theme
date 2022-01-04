@@ -100,3 +100,253 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+
+/* Woocommerce
+--------------------------------------------- */
+@import "woocommerce.scss";
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	overflow-x: hidden;
+}
+  
+
+.width-container{
+	width: 70%;
+	margin: 0 auto;
+	@include respo-small{
+		width: 83%;
+	}
+}
+
+a{
+	text-decoration: none;
+}
+
+
+h1, h2{
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+@include respo-big{
+	h1{
+		font-size: 50px;
+	}
+	h2{
+		font-size: 50px;
+	}
+}
+@include respo-medium{
+	h1{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	h2{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+}
+@include respo-small{
+	h1{
+		font-size: 21px;
+	}
+	h2{
+		font-size: 21px;
+	}
+}
+
+
+
+/* FRONT PAGE ----------------------------------------------------------------------------------- */
+/*Grande Image + description au dessus*/
+.description{
+	position: relative;
+	margin-top: 80px;
+
+	div{
+		position: absolute;
+		top: 50%;
+		right: 10%;
+  		transform: translate(0%, -50%);
+		z-index: 1;
+		width: 27%;
+		color: white;
+	}
+	a{
+		text-transform: uppercase;
+		color: white;
+		background-color: #A4CBAD;
+		border-radius: 30px;
+		font-weight: 700;
+		padding: 15px 20px;
+	}
+	.illustration-ligne{
+		width: 50%;
+		position: absolute;
+		bottom: -50%;
+		right: -20%;
+		z-index: -1;
+	}
+
+	img{
+		height:56%;
+		overflow: hidden;
+	}
+
+	@include respo-big{
+		a{
+			font-size: 26px;
+		}
+		p{
+			font-size: 30px;
+		}
+	}
+
+	@include respo-medium{
+		div{
+			width: 60%;
+			top: 50%;
+			right: 50%;
+			transform: translate(50%, -50%);
+			text-align: center;
+		}
+		a{
+			font-size: 12px;
+			padding: 7px 14px;
+		}
+		p{
+			font-size: 14px;
+		}
+		
+	}
+
+	@include respo-small{
+		a{
+			font-size: 8px;
+			padding: 7px 14px;
+		}
+		p{
+			font-size: 13px;
+		}
+	}
+
+}
+
+/*Section explication*/
+.index-texte{
+	margin-top: 80px;
+
+	section{
+		display: flex;
+		gap: 5%;
+		margin-bottom: 80px;
+		justify-content: center;
+		div{
+			width: 30%;
+			margin: 0 auto;
+		}
+		img{
+			width: 100%;
+		}
+	}
+
+	@include respo-big{
+		p{
+			font-size: 26px;
+		}
+	}
+
+	@include respo-medium{
+		margin-top: 20px;
+		p{
+			font-size: 12px;
+		}
+	}
+
+	@include respo-small{
+		section{
+			display: block;
+    		div{
+				width: 60%;
+			}
+		}
+		p{
+			font-size: 10px;
+		}
+	}
+
+}
+
+
+
+
+/* NOUS CONNAITRE ----------------------------------------------------------------------------------- */
+.top{
+	position: relative;
+
+	.illustration-ligne{
+		width: 50%;
+		position: absolute;
+		bottom: -50%;
+		right: -20%;
+		z-index: -1;
+	}
+}
+
+.entry-title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	color: white;
+}
+
+
+
+.connaitre-un{
+	margin-top: 80px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	color: white;
+	background-color: #B59D92;
+
+	.div-flex{
+		display: flex;
+		align-items: center;
+		gap:50px;
+
+		img{
+			width: 30%;
+			height: 30%;
+		}
+	}
+}
+
+.connaitre-deux{
+	margin-top: 80px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	.div-flex{
+		display: flex;
+		align-items: center;
+		gap:5%;
+
+
+		img{
+			background-color: #A4CBAD;
+			padding: 20px 50px;
+			width: 30%;
+		}
+	}
+	
+}
+
