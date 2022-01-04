@@ -100,3 +100,112 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+
+/* Woocommerce
+--------------------------------------------- */
+@import "woocommerce.scss";
+
+/* Font 
+--------------------------------------------- */
+@import url("https://use.typekit.net/ciz0ywj.css");
+
+
+.footer{
+	color: white;
+	font-family: effra, sans-serif; 
+	width: 100%;
+	background-color: #B59D92;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	&-logo {
+		margin-top: 1.5rem;
+	}
+
+	&-content{
+		width: 80%;
+		padding: 1rem 0;
+		margin-top: 2rem;
+		display: flex;
+		justify-content: space-between;
+		@include lg{
+			justify-content: space-evenly;
+		}
+		@include md {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		
+
+		&-desc{
+			max-width: 450px;
+			@include lg {
+				display: none;
+			}
+
+			> p {
+				font-size: 18px;
+				font-weight: 300;
+				margin: 0;
+
+				> span {
+					font-weight: 600;
+				}
+			}
+		}
+
+		&-support{
+
+			> p {
+				margin: 0;
+				font-size: 25px;
+				font-weight: bold;
+			}
+
+			> div > ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				
+				> li > a {
+					color: white;
+				}
+			}
+		}
+
+		&-contact{
+
+			> p:first-child {
+				margin: 0;
+				font-size: 25px;
+				font-weight: bold;
+				@include md{
+					margin-top: 1rem;
+				}
+			}
+
+			> div > ul {
+				display: flex;
+				width: 60%;
+				justify-content: space-between;
+				list-style: none;
+				margin: 1rem 0 0 0;
+				padding: 0;
+				@include md{
+					margin: 1rem auto;
+				}
+				
+				> li > a {
+					color: white;
+				}
+			}
+		}
+	}
+
+	> p {
+		margin-top: 2rem;
+	}
+}

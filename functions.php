@@ -50,6 +50,8 @@ function baya_rose_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'baya-rose' ),
+			'menu-footer-1' => 'menu footer support',
+			'menu-footer-2' => 'menu footer contact',
 		)
 	);
 
@@ -182,3 +184,20 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+/**
+ * Change menu text to acf icon.
+ */
+add_filter('wp_nav_menu_objects', function($items) {
+	foreach ($items as &$item) {
+		$icon = get_field('icon', $item);		
+		
+		if ($icon) {
+			$item->title = '<i class="' . $icon . '"></i>';
+		}
+	}
+	return $items;
+});
+
+
