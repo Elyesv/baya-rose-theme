@@ -77,9 +77,366 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
 body {
 	margin: 0;
+	overflow-x: hidden; 
+	font-family: 'Roboto';
 }
+
+
+.contenu{
+	margin-top: 100px;
+    margin-left: 150px;
+	margin-bottom: 100px;
+}
+
+
+
+.paiement{
+    margin-left: 150px;
+	margin-bottom: 50px;
+}
+
+
+
+.contenu > h3{
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.contenu > p{
+	font-size: 1.5em;
+}
+
+.contenu > img{
+	position: absolute;
+	right: -300px;
+	top: 650px;
+	z-index: 0;
+}
+
+.paiement > p{
+	font-size: 1.5em;
+}
+
+.paiement > h3{
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.paiement > img{
+	position: absolute;
+	left: -300px;
+	top: 1700px;
+	z-index: 0;
+}
+
+
+
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+/*	background-image: url(img/pexels-photo-7682666.png);  */
+	
+	
+}
+
+.header > h1{
+	position: absolute;
+	z-index: 3;
+	color: white;
+	font-weight: 400;
+	font-size:4.375em; 
+
+}
+
+.header > img{
+    width: 100%;
+	position: relative;
+	z-index: 3;
+	
+}
+
+
+.question{
+	display: flex;
+	width: 50%;
+	overflow: hidden;
+	max-height: 250px;
+
+	transition: max-height 0.7s;
+
+}
+
+.question > p{
+	font-size: 1.5em;
+}
+
+.question.open{
+	max-height: 1000px;
+	transition: max-height 0.7s;
+}
+
+.plus{
+	margin-left: 230px;
+	justify-content: flex-end;
+}
+
+.plus > p{
+	font-size: 1.5em;
+}
+
+@media (max-width: 1024px) {
+	body{
+		overflow-x: hidden; 
+	}
+
+	.header > h1{
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+
+	.header > img{
+		
+	}
+
+
+
+	.paiement > img{
+		left: -120px;
+		top: 710px;
+	}
+
+	.contenu > h3{
+		font-size: 0.68em;
+		font-weight: bold;
+	}
+
+	.contenu > img{
+		top: 300px;
+		right: -200px;
+	}
+
+	.contenu{
+		margin-left: 37px;
+		margin-bottom: 32px;
+		margin-top: 35px;
+	}
+
+	.paiement{
+		margin-left: 37px;
+	}
+
+	.paiement > h3{
+		font-size: 0.68em;
+		font-weight: bold;
+	}
+
+	
+
+	.plus{
+		margin-left: 50px;
+	}
+
+	.question{
+		width: 100%;
+		font-size: 0.43em;
+	}
+ }
+
+
+	
+.productimg > img{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+.woocommerce-product-details__short-description{
+	margin-left:300px ;
+}
+
+.woocommerce-product-details__short-description > h4{
+	margin-left:350px ;
+}
+
+.barre{
+	height: 5px;
+    background-color: #B59D92;
+    width: 60%;
+    position: absolute;
+    top: 600px;
+    right: 100px;
+}
+
+.barredown{
+	height: 5px;
+    background-color: #B59D92;
+    width: 90%;
+    position: absolute;
+    top: 930px;
+    right: 100px;
+	
+}
+
+.barredown2{
+	height: 5px;
+    background-color: #B59D92;
+    width: 90%;
+    position: absolute;
+    top: 1025px;
+    right: 100px;
+	
+}
+
+.wp-block-search__input{
+	display: none;
+}
+
+.wp-block-search .wp-block-search__inside-wrapper{
+	display: none;
+}
+	
+.wp-block-search .wp-block-search__label {
+	display: none;
+}
+
+.quantity{
+
+}
+
+.discover{
+	text-align: center;
+}
+
+
+.taille{
+	position: absolute;
+    top: 600px;
+    margin-left: 650px;
+	margin-bottom: 20px;
+	
+}
+
+#taille{
+	border: 1px solid #ccc;
+    position: absolute;
+    top: 500px;
+    left: 650px;
+}
+
+.label > label{
+	position: absolute;
+    top: 410px;
+    margin-left: 651px;
+	font-weight: bold;
+}
+
+#tab-additional_information{
+	display: none;
+}
+
+.woocommerce-tabs{
+	display: none;
+}
+
+.up-sells > h2{
+	display: none;
+}
+
+.product_meta{
+	display: none;
+}
+
+
+#quantity_61d5c07f59a96{
+	color: green;
+}
+
+.wc-stripe-product-checkout-container.active{
+	display: none;
+}
+
+.single_add_to_cart_button{
+	width: 30%;
+	-webkit-appearance: button;
+    position: absolute;
+    top: 600px;
+    margin-left: 1100px;
+	border:solid 2px #B59D92;
+	color: #B59D92;
+	text-transform: uppercase;
+	border-radius: 90px;
+	background-color: white;
+	font-weight: bold;
+	height: 50px;
+	
+}
+
+
+
+
+.gpay-card-info-placeholder-container{
+	margin-top: 500px;
+}
+
+.reset_variations{
+	display: none;
+}
+.flex{
+	display: flex;
+	margin-bottom: 200px;
+}
+
+.single-product div.product .woocommerce-product-gallery  > img{
+	margin-left: 300px;
+	height: 700px;
+}
+
+.gpay-card-info-placeholder-container{
+	margin-top: 200px;
+}
+
+.quantity > button{
+	
+    position: absolute;
+    top: 600px;
+    margin-left: 1000px;
+}
+
+
+
+
+
+
+.size{
+	margin-right: 50px;
+	color: #A4CBAD;
+	border: 3px solid #A4CBAD;
+	padding: 0px 20px 0px 20px;
+	border-radius: 90px;
+}
+
+.woocommerce-product-gallery__image{
+	margin-left: 300px;
+}
+
+.summary  > h1{
+	clear: none;
+}
+
+.woocommerce-product-gallery{
+	margin-right: 50px;
+}
+
 
 /**
  * Render the `main` element consistently in IE.
@@ -756,11 +1113,6 @@ textarea {
 	display: none;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
 
 .page-links {
 	clear: both;
