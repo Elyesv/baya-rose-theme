@@ -121,9 +121,6 @@ body {
 .width-container{
 	width: 85%;
 	margin: 0 auto;
-	@include respo-small{
-		width: 83%;
-	}
 }
 
 a{
@@ -305,12 +302,10 @@ h1, h2, .entry-title{
 
 
 
-/* NOUS CONNAITRE ----------------------------------------------------------------------------------- */
-img .top-connaitre{
-	object-position: 25% 20%;
-}
+/* NOUS CONNAITRE partie ----------------------------------------------------------------------------------- */
 
-.top{
+/*Grande Image + description au dessus*/
+.top{ 
 	position: relative;
 
 	div{
@@ -322,11 +317,9 @@ img .top-connaitre{
 		color: white;
 		font-size: 32px;
 		text-transform: uppercase;
-		font-weight: 700;
 		@include respo-big{
 			font-size: 50px;
 		}
-	
 		@include respo-medium{
 			font-size: 22.5px;
 			top: 40%;
@@ -370,12 +363,15 @@ img .top-connaitre{
 		}
 	}
 }
+img .top-partie{
+	object-position: 25% 20%;
+}
 
 
 
 
 
-.connaitre{	
+.partie{	
 	margin-top: 80px;
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -390,32 +386,28 @@ img .top-connaitre{
 	
 }
 
-.connaitre-un{
+.fond{
 	color: white;
 	background-color: $light-brown;
 }
 
-.connaitre-deux{
+.sans-fond{
 	.div-flex img{
 		background-color: $light-green;
 		padding: 20px 50px;
 	}
 }
 
-@include respo-big{
-	.connaitre .div-flex{
-		width: 40%;
-	}
-}
+
 
 @include respo-medium{
-	.connaitre-deux{
+	.sans-fond{
 		.div-flex img{
 			background-color:$light-green;
 			padding: 10px 25px;
 		}
 	}
-	.connaitre{
+	.partie{
 		margin-top: 27px;
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -431,3 +423,16 @@ img .top-connaitre{
 	}
 }
 
+
+
+
+.h2-bg{
+	background-color: $light-brown;
+	width: fit-content;
+	padding: 10px 60px;
+	color: white;
+}
+
+.div-iframe{
+	width: 40%;
+}

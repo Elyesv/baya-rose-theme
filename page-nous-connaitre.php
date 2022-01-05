@@ -24,14 +24,14 @@ get_header();
 			?>
 
 
-			<section  class="top top-connaitre">
+			<section  class="top top-partie">
 				<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-7292977.png" alt="Baya-Rose">
 				<div><h1><?php echo the_title( '<h1 class="entry-title"></h1>' );?> </h1></div>
 				<img class="illustration-ligne" src="http://localhost/baya-rose/wp-content/uploads/2022/01/Illustration-8.png" alt="Baya-Rose">
 			</section>
 
 
-			<section class="connaitre connaitre-un">
+			<section class="partie fond">
 				<div class="div-flex width-container">
 				<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-847483.png" alt="Environnement Liberté">
 					<div>
@@ -43,7 +43,7 @@ get_header();
 				</div>
 			</section>
 
-			<section class="connaitre connaitre-deux">
+			<section class="partie sans-fond">
 				<div class="div-flex width-container">
 					<div>
 						<h2>RESPECT DE L’ENVIRONNEMENT</h2>

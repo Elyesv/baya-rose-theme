@@ -1411,11 +1411,6 @@ body {
   width: 85%;
   margin: 0 auto;
 }
-@media (max-width: 480px) {
-  .width-container {
-    width: 83%;
-  }
-}
 
 a {
   text-decoration: none;
@@ -1585,11 +1580,8 @@ h1, h2, .entry-title {
   }
 }
 
-/* NOUS CONNAITRE ----------------------------------------------------------------------------------- */
-img .top-connaitre {
-  object-position: 25% 20%;
-}
-
+/* NOUS CONNAITRE partie ----------------------------------------------------------------------------------- */
+/*Grande Image + description au dessus*/
 .top {
   position: relative;
 }
@@ -1602,7 +1594,6 @@ img .top-connaitre {
   color: white;
   font-size: 32px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 @media (min-width: 1380px) {
   .top div {
@@ -1652,54 +1643,63 @@ img .top-connaitre {
   }
 }
 
-.connaitre {
+img .top-partie {
+  object-position: 25% 20%;
+}
+
+.partie {
   margin-top: 80px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.connaitre .div-flex {
+.partie .div-flex {
   display: flex;
   align-items: center;
   gap: 5%;
 }
-.connaitre .div-flex img {
+.partie .div-flex img {
   width: 30%;
 }
 
-.connaitre-un {
+.fond {
   color: white;
   background-color: #B59D92;
 }
 
-.connaitre-deux .div-flex img {
+.sans-fond .div-flex img {
   background-color: #A4CBAD;
   padding: 20px 50px;
 }
 
-@media (min-width: 1380px) {
-  .connaitre .div-flex {
-    width: 40%;
-  }
-}
 @media (max-width: 880px) {
-  .connaitre-deux .div-flex img {
+  .sans-fond .div-flex img {
     background-color: #A4CBAD;
     padding: 10px 25px;
   }
 
-  .connaitre {
+  .partie {
     margin-top: 27px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .connaitre .div-flex {
+  .partie .div-flex {
     display: block;
   }
-  .connaitre .div-flex img {
+  .partie .div-flex img {
     width: 50%;
     display: flex;
     margin: 0 auto;
   }
+}
+.h2-bg {
+  background-color: #B59D92;
+  width: fit-content;
+  padding: 10px 60px;
+  color: white;
+}
+
+.div-iframe {
+  width: 40%;
 }
 
 /*# sourceMappingURL=woocommerce.css.map */
