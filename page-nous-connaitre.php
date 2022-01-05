@@ -24,14 +24,14 @@ get_header();
 			?>
 
 
-			<section  class="top">
-				<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-9512038.png" alt="Baya-Rose">
-				<h1><?php echo the_title( '<h1 class="entry-title"></h1>' );?> </h1>
+			<section  class="top top-connaitre">
+				<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-7292977.png" alt="Baya-Rose">
+				<div><h1><?php echo the_title( '<h1 class="entry-title"></h1>' );?> </h1></div>
 				<img class="illustration-ligne" src="http://localhost/baya-rose/wp-content/uploads/2022/01/Illustration-8.png" alt="Baya-Rose">
 			</section>
 
 
-			<section class="connaitre-un">
+			<section class="connaitre connaitre-un">
 				<div class="div-flex width-container">
 				<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-847483.png" alt="Environnement Liberté">
 					<div>
@@ -43,7 +43,7 @@ get_header();
 				</div>
 			</section>
 
-			<section class="connaitre-deux">
+			<section class="connaitre connaitre-deux">
 				<div class="div-flex width-container">
 					<div>
 						<h2>RESPECT DE L’ENVIRONNEMENT</h2>
@@ -51,8 +51,7 @@ get_header();
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 						ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 					</div>
-				
-						<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-6412282.png" alt="Environnement Liberté">
+					<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-6412282.png" alt="Environnement Liberté">
 				
 				</div>
 			</section>
