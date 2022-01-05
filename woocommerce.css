@@ -1580,7 +1580,7 @@ h1, h2, .entry-title {
   }
 }
 
-/* NOUS CONNAITRE partie ----------------------------------------------------------------------------------- */
+/* NOUS CONNAITRE et TUTORIELS  ----------------------------------------------------------------------------------- */
 /*Grande Image + description au dessus*/
 .top {
   position: relative;
@@ -1647,6 +1647,7 @@ img .top-partie {
   object-position: 25% 20%;
 }
 
+/* Les sections*/
 .partie {
   margin-top: 80px;
   padding-top: 80px;
@@ -1671,7 +1672,12 @@ img .top-partie {
   padding: 20px 50px;
 }
 
+/*Responsive medium des sections*/
 @media (max-width: 880px) {
+  .fond .div-flex {
+    flex-flow: column-reverse !important;
+  }
+
   .sans-fond .div-flex img {
     background-color: #A4CBAD;
     padding: 10px 25px;
@@ -1683,7 +1689,8 @@ img .top-partie {
     padding-bottom: 20px;
   }
   .partie .div-flex {
-    display: block;
+    display: flex;
+    flex-flow: column;
   }
   .partie .div-flex img {
     width: 50%;
@@ -1691,6 +1698,7 @@ img .top-partie {
     margin: 0 auto;
   }
 }
+/* Seulement TUTORIELS */
 .h2-bg {
   background-color: #B59D92;
   width: fit-content;
@@ -1698,8 +1706,31 @@ img .top-partie {
   color: white;
 }
 
+/*I-frame*/
 .div-iframe {
-  width: 40%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 30%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-left: 30%;
+}
+@media (max-width: 880px) {
+  .div-iframe {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=woocommerce.css.map */

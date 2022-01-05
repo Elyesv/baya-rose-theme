@@ -41,15 +41,18 @@ get_header();
 							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 							t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
-					
-					<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-6412282.png" alt="Environnement Liberté">
+					<div class="div-iframe">
+						<iframe class="video-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+					</div>
 				</div>
 			</section>
 
 
 			<section class="partie fond">
 				<div class="div-flex width-container">
-				<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-847483.png" alt="Environnement Liberté">
+				<div class="div-iframe">
+						<iframe class="video-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+					</div>
 					<div>
 						<h2>ROBE LONGUE</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -73,7 +76,9 @@ get_header();
 							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 							t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
-					<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-6412282.png" alt="Environnement Liberté">
+					<div class="div-iframe">
+						<iframe class="video-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+					</div>
 				</div>
 			</section>
 
