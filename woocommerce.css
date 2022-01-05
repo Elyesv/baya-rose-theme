@@ -1399,6 +1399,12 @@ p.no-comments {
 
 /* Font 
 --------------------------------------------- */
+/* Footer
+--------------------------------------------- */
+.post, .page {
+  margin: 0 !important;
+}
+
 .footer {
   color: white;
   font-family: effra, sans-serif;
@@ -1488,6 +1494,104 @@ p.no-comments {
 }
 .footer > p {
   margin-top: 2rem;
+}
+
+/* Contact
+--------------------------------------------- */
+.hero-bg {
+  background-image: url("../../uploads/2022/01/hero_bg_contact.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 845px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 640px) {
+  .hero-bg {
+    background-position: -450px 0px;
+  }
+}
+.hero-bg-title {
+  font-size: 70px;
+  color: white;
+  font-family: effra, sans-serif;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.contact-title {
+  font-size: 32px;
+  font-family: effra, sans-serif;
+  margin-top: 4rem;
+}
+@media screen and (max-width: 640px) {
+  .contact-title {
+    font-size: 20px;
+  }
+}
+
+/* Surcouche Formulaire
+--------------------------------------------- */
+.ninja-forms-req-symbol, .nf-form-fields-required {
+  display: none;
+}
+
+.label-above .nf-field-element, .label-below .nf-field-element {
+  width: inherit !important;
+}
+
+.nf-error-msg {
+  margin-bottom: 1rem;
+}
+
+#nf-field-5, #nf-field-6 {
+  width: 450px;
+  border: 2px solid #A4CBAD;
+  background-color: white;
+}
+@media screen and (max-width: 640px) {
+  #nf-field-5, #nf-field-6 {
+    width: 300px;
+  }
+}
+
+#nf-field-7 {
+  width: 900px;
+  border: 2px solid #A4CBAD;
+  background-color: white;
+}
+@media screen and (max-width: 1024px) {
+  #nf-field-7 {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #nf-field-7 {
+    width: 300px;
+  }
+}
+
+#nf-field-8 {
+  width: 300px;
+  background-color: #B59D92;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: effra, sans-serif;
+}
+#nf-field-8:hover {
+  color: wheat;
 }
 
 /*# sourceMappingURL=woocommerce.css.map */
