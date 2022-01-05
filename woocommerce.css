@@ -1437,12 +1437,12 @@ h1, h2 {
 }
 @media (max-width: 880px) {
   h1 {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
   }
 }
@@ -1486,8 +1486,13 @@ h1, h2 {
   z-index: -1;
 }
 .description img {
-  height: 56%;
-  overflow: hidden;
+  height: 845px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 1380px) {
   .description a {
@@ -1505,8 +1510,14 @@ h1, h2 {
     transform: translate(50%, -50%);
     text-align: center;
   }
+  .description img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: auto;
+  }
   .description a {
-    font-size: 12px;
+    font-size: 14px;
     padding: 7px 14px;
   }
   .description p {
@@ -1514,6 +1525,11 @@ h1, h2 {
   }
 }
 @media (max-width: 480px) {
+  .description img {
+    height: 315px;
+    width: 100%;
+    object-fit: cover;
+  }
   .description a {
     font-size: 8px;
     padding: 7px 14px;
@@ -1550,7 +1566,7 @@ h1, h2 {
     margin-top: 20px;
   }
   .index-texte p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 480px) {

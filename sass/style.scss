@@ -145,11 +145,11 @@ h1, h2{
 }
 @include respo-medium{
 	h1{
-		font-size: 20px;
+		font-size: 25px;
 		margin-bottom: 10px;
 	}
 	h2{
-		font-size: 20px;
+		font-size: 25px;
 		margin-bottom: 10px;
 	}
 }
@@ -196,8 +196,13 @@ h1, h2{
 	}
 
 	img{
-		height:56%;
-		overflow: hidden;
+		height:845px;
+		width: 100%;
+		object-fit: cover;
+		object-position: 50% 20%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	@include respo-big{
@@ -217,8 +222,14 @@ h1, h2{
 			transform: translate(50%, -50%);
 			text-align: center;
 		}
+		img{
+			height:100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: auto;
+		}
 		a{
-			font-size: 12px;
+			font-size: 14px;
 			padding: 7px 14px;
 		}
 		p{
@@ -228,6 +239,11 @@ h1, h2{
 	}
 
 	@include respo-small{
+		img{
+			height:315px;
+			width: 100%;
+			object-fit: cover;
+		}
 		a{
 			font-size: 8px;
 			padding: 7px 14px;
@@ -266,7 +282,7 @@ h1, h2{
 	@include respo-medium{
 		margin-top: 20px;
 		p{
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
 
