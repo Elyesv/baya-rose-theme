@@ -50,7 +50,9 @@ function baya_rose_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'primary', 'baya-rose' ),
-			'menu-nav' => 'menu-nav-icons'
+			'menu-nav' => 'menu-nav-icons',
+			'menu-mobile' => 'menu-mobile',
+			"menu-icons-mobile" => "menu-icons-mobile"
 		)
 	);
 
