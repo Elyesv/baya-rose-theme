@@ -111,6 +111,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Header
 --------------------------------------------- */
+.main-navigation ul {
+	display: flex;
+}
+
+.menu-menu-mobile-burger-container {
+	height: 100vh;
+	width: 300px;
+	position: fixed;
+	top: 0;
+	right: -350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s;
+	background-color: rgba($color: #B59D92, $alpha: 0.6)
+}
+
+.open-menu {
+	right: 0;
+}
+
 #masthead {
 	background-color: #B59D92;
 	display: flex;
@@ -124,6 +145,52 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	nav {
 		max-width:fit-content;
 		margin-right: 40px;
+		.menu-toggle {
+			display: none;
+		}
+		#mobile-menu {
+			display: none;
+			.fa-bars {
+				font-size: 40px;
+				margin-top: 25px;
+				display: block;
+				color: #fff;
+			}
+			a {
+				color: #fff;
+				font-size: 20px;
+			}
+			#menu-icons-mobile {
+				display: flex;
+				justify-content: space-around;
+				min-width: 100px;
+				margin-top: 25px;
+				margin-right: 12px;
+				i {
+					font-size: 40px;
+				}
+			}
+			#menu-mobile {
+				flex-direction: column;
+				justify-content: center;
+				.mobile-lang a{
+					color: #CCE1A3;
+					font-size: 16px;
+					margin-top: 20px;
+				}
+				.mobile-title a{
+					color: #67836E;
+					font-size: 24px;
+					margin-top: 20px;
+				}
+				.close-menu i {
+					font-size: 40px;
+					position: absolute;
+					right: -45px;
+					bottom: 240px;
+				}
+			}
+		}
 		#menu {
 			display: flex;
 			flex-direction: row;
@@ -164,5 +231,67 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 				}
 			}
 		}
+	}
+}
+
+.disappear {
+	display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+	#masthead {
+		.custom-logo {
+			max-width: 240px;
+			margin-left: 20px;
+		}
+		nav {
+			max-width:fit-content;
+			margin-right: 20px;
+			#menu {
+				margin-top: 25px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#masthead {
+		nav {
+			.menu-toggle {
+				display: flex;
+			}
+			#mobile-menu {
+				display: flex !important;
+			}
+			#menu {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#masthead {
+		.custom-logo {
+			max-width: 180px;
+			margin-left: 10px;
+		}
+		nav {
+			#mobile-menu {
+				.fa-bars {
+					margin-top: 15px;
+				}
+				#menu-icons-mobile {
+					margin-top: 15px;
+				}
+				#menu-mobile {
+					.close-menu i{
+						right: -45px;
+						bottom: 250px;
+					}
+				}
+			}
+		}	
 	}
 }
