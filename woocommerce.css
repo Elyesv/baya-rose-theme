@@ -1733,4 +1733,71 @@ img .top-partie {
   height: 100%;
 }
 
+/* ARCHIVE **************************************/
+.filter {
+  margin: 30px auto !important;
+}
+.filter select {
+  background-color: #A4CBAD;
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+}
+@media (max-width: 880px) {
+  .filter select {
+    padding: 5px;
+  }
+}
+
+.all-in-archive {
+  display: flex;
+  margin: 0 auto;
+  place-items: center;
+  gap: 2%;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.each-in-archive {
+  display: inline;
+  width: 23%;
+  place-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 880px) {
+  .each-in-archive {
+    width: 43%;
+  }
+}
+.each-in-archive img {
+  border-radius: 10px;
+}
+.each-in-archive h2 {
+  margin: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+@media (min-width: 1380px) {
+  .each-in-archive h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 480px) {
+  .each-in-archive h2 {
+    font-size: 14px;
+  }
+}
+.each-in-archive h2 a {
+  color: black;
+}
+.each-in-archive .price {
+  color: #A4CBAD;
+}
+@media (min-width: 1380px) {
+  .each-in-archive .price {
+    font-size: 26px;
+  }
+}
+
 /*# sourceMappingURL=woocommerce.css.map */
