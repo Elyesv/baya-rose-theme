@@ -133,7 +133,7 @@ body {
 .paiement > img{
 	position: absolute;
 	left: -300px;
-	top: 1700px;
+	top: 1600px;
 	z-index: 0;
 }
 
@@ -200,7 +200,7 @@ body {
 	}
 
 	.header > h1{
-		font-size: 1.3em;
+		font-size: 1.9em;
 		font-weight: bold;
 	}
 
@@ -212,7 +212,7 @@ body {
 
 	.paiement > img{
 		left: -120px;
-		top: 710px;
+		top: 1210px;
 	}
 
 	.contenu > h3{
@@ -282,7 +282,7 @@ body {
     background-color: #B59D92;
     width: 90%;
     position: absolute;
-    top: 930px;
+    top: 1250px;
     right: 100px;
 	
 }
@@ -292,10 +292,12 @@ body {
     background-color: #B59D92;
     width: 90%;
     position: absolute;
-    top: 1025px;
+	top: 1140px;
     right: 100px;
 	
 }
+
+
 
 .wp-block-search__input{
 	display: none;
@@ -310,11 +312,45 @@ body {
 }
 
 .quantity{
-
+	color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+    margin-left: 650px;
+    margin-top: 270px;
+	width: 197px;
+	text-align: center !important;
+	background-color: #A4CBAD;
+	border-radius: 90px;
+	color: #A4CBAD;;
 }
+
+#quantity_61d6c440ee916{
+	border-radius: 90px;
+}
+
+.quantity > input{
+	border-radius: 90px;
+	text-align: center;
+	color: #A4CBAD;;
+}
+
+#quantity_61d6c380b4797{
+	background-color: #A4CBAD;
+	border-radius: 90px;
+}
+
+.input-text{
+	border-radius: 90px;
+}
+
 
 .discover{
 	text-align: center;
+}
+
+.discover > h2{
+	font-weight: normal;
 }
 
 
@@ -324,6 +360,25 @@ body {
     margin-left: 650px;
 	margin-bottom: 20px;
 	
+}
+
+.wp-block-group__inner-container{
+	display: none;
+}
+
+.contenu > img{
+	position: absolute;
+	right: -300px;
+	top: 650px;
+	z-index: 0;
+}
+
+@media screen and (min-width: 48em) {
+ul.products.columns-4 li.product {
+    width: 22.15%;
+	top: 450px;
+    margin-left: 100px;
+}
 }
 
 #taille{
@@ -356,6 +411,10 @@ body {
 	display: none;
 }
 
+.wp-block-image{
+	display: none;
+}
+
 
 #quantity_61d5c07f59a96{
 	color: green;
@@ -369,15 +428,17 @@ body {
 	width: 30%;
 	-webkit-appearance: button;
     position: absolute;
-    top: 600px;
+    top: 650px;
     margin-left: 1100px;
 	border:solid 2px #B59D92;
-	color: #B59D92;
+	color: white;
 	text-transform: uppercase;
 	border-radius: 90px;
-	background-color: white;
+	
 	font-weight: bold;
 	height: 50px;
+	background-color: #B59D92;
+
 	
 }
 
@@ -437,7 +498,170 @@ body {
 	margin-right: 50px;
 }
 
+.entry-header > h1{
+	color: white;
+}
 
+.thfaqf-faq-list{
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.thfaqf-faq-list > h3{
+	font-weight: bold;
+	font-size: 1.7em;
+}
+
+.thfaqf-faq-item  > div{
+	background-color: white !important;
+}
+
+.thfaqf-faq-item-title h4{
+	font-weight: normal;
+}
+
+.site-info{
+	display: none;
+}
+
+.thfaqf-faq-item-title{
+	background-color: white;
+}
+
+
+.wc_stripe_product_payment_methods{
+	display: none;
+}
+
+.woocommerce-Price-amount :first-of-type{
+	
+    font-weight: bolder;
+}
+
+@media (max-width: 1024px){
+	.summary > h1{
+		margin-left: 170px;
+
+	}
+
+	.wp-post-image{
+		max-width: none;
+		
+		width: 150px;
+
+	}
+
+	.woocommerce-product-gallery__image {
+		margin-left: 0px; 
+	}
+	.price{
+		margin-left: 0px;
+	}
+
+	.woocommerce-product-details__short-description{
+		margin-left: 170px;
+	}
+
+
+	.woocommerce-product-details__short-description > h4{
+		margin-left: 0px;
+	}
+
+	.barre{
+		top: 1030px;
+    	left: 170px;
+	}
+
+	.label > label {
+		position: absolute;
+		top: 850px;
+		margin-left: 170px;
+		font-weight: bold;
+	}
+
+	#taille {
+		border: 1px solid #ccc;
+		position: absolute;
+		top: 900px;
+		left: 170px;
+	}
+
+	.quantity {
+		color: #666;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		padding: 3px;
+		margin-left: 170px;
+		margin-top: 227px;
+		width: 20%;
+		text-align: center !important;
+		background-color: #A4CBAD;
+		border-radius: 90px;
+		color: #A4CBAD;
+	}
+
+	.quantity > input{
+		
+		border-radius: 90px;
+		color: white;
+		width: 50px !important;
+
+	}
+
+	.single_add_to_cart_button {
+		width: 33%;
+		-webkit-appearance: button;
+		position: absolute;
+		top: 985px;
+		margin-left: 270px;
+		border: solid 2px #B59D92;
+		color: #B59D92;
+		text-transform: uppercase;
+		border-radius: 90px;
+		background-color: white;
+		font-weight: bold;
+		height: 50px;
+	}
+
+	.barredown {
+		height: 5px;
+		background-color: #B59D92;
+		width: 90%;
+		position: absolute;
+		top: 1400px;
+		right: 0px;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	.discover > h2 {
+		font-weight: normal;
+		position: absolute;
+		top: 1400px;
+		text-align: center;
+		margin-left: 60px;
+	}
+
+	.barredown2 {
+		height: 5px;
+		background-color: #B59D92;
+		width: 90%;
+		position: absolute;
+		top: 1480px;
+		right: 0px;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	ul.products li.product {
+		list-style: none;
+		position: relative;
+		margin-bottom: 2em;
+		margin-left: 130px;
+		top: 300px;
+	}
+}
 /**
  * Render the `main` element consistently in IE.
  */
@@ -961,10 +1185,13 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
+	color: white;
 	border: 1px solid #ccc;
-	border-radius: 3px;
+	background-color: #A4CBAD;
 	padding: 3px;
+	font-weight: bold;
+	font-size: 1.3em;
+	width: 100px;
 }
 
 input[type="text"]:focus,
