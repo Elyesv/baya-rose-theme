@@ -308,3 +308,604 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	}
 }
 
+
+* {
+	margin: 0;
+	padding: 0;
+	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	overflow-x: hidden;
+}
+
+
+.width-container{
+	width: 85%;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+h1, h2, .entry-title{
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+@include respo-big{
+	h1{
+		font-size: 50px;
+	}
+	h2{
+		font-size: 50px;
+	}
+}
+@include respo-medium{
+	h1{
+		font-size: 22.5px;
+		margin-bottom: 10px;
+	}
+	h2{
+		font-size: 22.5px;
+		margin-bottom: 10px;
+	}
+}
+@include respo-small{
+	h1{
+		font-size: 21px;
+	}
+	h2{
+		font-size: 21px;
+	}
+}
+
+
+
+
+/* FRONT PAGE ----------------------------------------------------------------------------------- */
+/*Grande Image + description au dessus*/
+.description{
+	position: relative;
+	margin-top: 80px;
+
+	div{
+		position: absolute;
+		top: 50%;
+		right: 10%;
+  		transform: translate(0%, -50%);
+		z-index: 1;
+		width: 27%;
+		color: white;
+	}
+	a{
+		text-transform: uppercase;
+		color: white;
+		background-color: $light-green;
+		border-radius: 30px;
+		font-weight: 700;
+		padding: 15px 20px;
+	}
+	.illustration-ligne{
+		width: 50%;
+		position: absolute;
+		bottom: -50%;
+		right: -20%;
+		z-index: -1;
+	}
+
+	img{
+		height:845px;
+		width: 100%;
+		object-fit: cover;
+		object-position: 50% 20%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include respo-big{
+		a{
+			font-size: 26px;
+		}
+	}
+
+	@include respo-medium{
+		div{
+			width: 60%;
+			top: 50%;
+			right: 50%;
+			transform: translate(50%, -50%);
+			text-align: center;
+		}
+		img{
+			height:100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: auto;
+		}
+		a{
+			font-size: 14px;
+			padding: 7px 14px;
+		}
+
+	}
+
+	@include respo-small{
+		img{
+			height:315px;
+			width: 100%;
+			object-fit: cover;
+		}
+		a{
+			font-size: 8px;
+			padding: 7px 14px;
+		}
+		p{
+			font-size: 13px;
+		}
+	}
+
+}
+
+/*Section explication*/
+.index-texte{
+	margin-top: 80px;
+
+	section{
+		display: flex;
+		gap: 5%;
+		margin-bottom: 80px;
+		justify-content: center;
+		flex-wrap: wrap;
+		div{
+			width: 30%;
+			margin: 0 auto;
+		}
+		img{
+			width: 100%;
+		}
+	}
+
+	@include respo-big{
+	}
+
+	@include respo-medium{
+		margin-top: 20px;
+	}
+
+	@include respo-small{
+		section{
+			display: block;
+    		div{
+				width: 60%;
+			}
+		}
+	}
+
+}
+
+
+
+
+/* NOUS CONNAITRE et TUTORIELS  ----------------------------------------------------------------------------------- */
+
+/*Grande Image + description au dessus*/
+.top{ 
+	position: relative;
+
+	div{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		color: white;
+		font-size: 32px;
+		text-transform: uppercase;
+		@include respo-big{
+			font-size: 50px;
+		}
+		@include respo-medium{
+			font-size: 22.5px;
+			top: 40%;
+			transform: translate(-50%, -50%);
+		}
+		@include respo-small{
+			font-size: 21px;
+		}
+	}
+
+	img{
+		height:845px;
+		width: 100%;
+		object-fit: cover;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.illustration-ligne{
+		width: 50%;
+		position: absolute;
+		bottom: -50%;
+		right: -20%;
+		z-index: -1;
+	}
+	@include respo-medium{
+		img{
+			height:100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: auto;
+		}
+	}
+
+	@include respo-small{
+		img{
+			height:315px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+img .top-partie{
+	object-position: 25% 20%;
+}
+
+
+
+
+/* Les sections*/
+.partie{	
+	margin-top: 80px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	.div-flex{
+		display: flex;
+		align-items: center;
+		gap:5%;
+		img{
+			width: 30%;
+		}
+	}
+
+}
+
+.fond{
+	color: white;
+	background-color: $light-brown;
+}
+
+.sans-fond{
+	.div-flex img{
+		background-color: $light-green;
+		padding: 20px 50px;
+	}
+}
+
+/*Responsive medium des sections*/
+@include respo-medium{
+	.fond{
+		.div-flex{
+			flex-flow: column-reverse !important;
+		} 
+	}
+	.sans-fond{
+		.div-flex img{
+			background-color:$light-green;
+			padding: 10px 25px;
+		}
+	}
+	.partie{
+		margin-top: 27px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.div-flex{
+			display:flex;
+          	flex-flow: column;
+			img{
+				width: 50%;
+				display: flex;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+
+
+/* Seulement TUTORIELS */
+.h2-bg{
+	background-color: $light-brown;
+	width: fit-content;
+	padding: 10px 60px;
+	color: white;
+}
+
+/*I-frame*/
+.div-iframe {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 30%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	padding-left: 30%;
+	@include respo-medium{
+		width: 60%;
+		display: flex;
+		margin: 0 auto;
+	}
+}
+
+.video-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ARCHIVE **************************************/
+
+.filter{
+	margin: 30px auto !important;
+	select{
+		background-color: $light-green;
+		padding: 10px;
+		border-radius: 30px;
+		color: white;
+		@include respo-medium{
+			padding: 5px;
+		}
+	}
+}
+
+
+.all-in-archive{
+	display: flex;
+	margin: 0 auto;
+	place-items: center;
+	gap: 2%;
+	row-gap: 30px;
+	flex-wrap: wrap;
+}
+
+.each-in-archive{
+	display: inline;
+	width: 23%;
+	place-items: center;
+	text-align: center;
+	margin: 0 auto;
+	@include respo-medium{
+		width: 43%;
+	}
+	img{
+		border-radius: 10px;
+	}
+	h2{
+		margin:5px;
+		font-size: 16px;
+		text-transform: uppercase;
+		@include respo-big{
+			font-size: 26px;
+		}
+		@include respo-small{
+			font-size: 14px;
+		}
+		a{
+			color: black;
+		}
+	}
+
+	.price{
+		color: $light-green;
+		@include respo-big{
+			font-size: 26px;
+		}
+	}
+
+} 
+
+/* Header
+--------------------------------------------- */
+.main-navigation ul {
+	display: flex;
+}
+
+.menu-menu-mobile-burger-container {
+	height: 100vh;
+	width: 300px;
+	position: fixed;
+	top: 0;
+	right: -350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s;
+	background-color:#C5B3AA;
+	z-index: 10;
+}
+
+.open-menu {
+	right: 0;
+}
+
+#masthead {
+	background-color: #B59D92;
+	display: flex;
+	justify-content: space-between;
+	.custom-logo {
+		max-width: 280px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 40px;
+	}
+	nav {
+		max-width:fit-content;
+		margin-right: 40px;
+		.menu-toggle {
+			display: none;
+		}
+		#mobile-menu {
+			display: none;
+			.fa-bars {
+				font-size: 40px;
+				margin-top: 25px;
+				display: block;
+				color: #fff;
+			}
+			a {
+				color: #fff;
+				font-size: 20px;
+			}
+			#menu-icons-mobile {
+				display: flex;
+				justify-content: space-around;
+				min-width: 100px;
+				margin-top: 25px;
+				margin-right: 12px;
+				i {
+					font-size: 40px;
+				}
+			}
+			#menu-mobile {
+				flex-direction: column;
+				justify-content: center;
+				.mobile-lang a{
+					color: #CCE1A3;
+					font-size: 16px;
+					margin-top: 20px;
+				}
+				.mobile-title a{
+					color: #67836E;
+					font-size: 24px;
+					margin-top: 20px;
+				}
+				.close-menu i {
+					font-size: 40px;
+					position: absolute;
+					right: -45px;
+					bottom: 215px;
+				}
+			}
+		}
+		#menu {
+			display: flex;
+			flex-direction: row;
+			margin-top: 30px;
+			a {
+				color: #fff;
+				font-size: 22px;
+			}
+			a:hover {
+				color: #A4CBAD;
+			}
+			#primary {
+				display: flex;
+				justify-content: space-around;
+				min-width: 350px;
+				margin-right: 30px;
+				.dropdown-link {
+					background-color: #C5B3AA;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					a {
+						color: #fff;
+						margin-left: 5px;
+					}
+					a:hover {
+						color: #CCE1A3;
+					}
+				}
+			}
+			#menu-nav-icons {
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				min-width: 150px;
+				i {
+					font-size: 40px;
+					margin-top: -5px;
+				}
+			}
+		}
+	}
+}
+
+.disappear {
+	display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+	#masthead {
+		.custom-logo {
+			max-width: 240px;
+			margin-left: 20px;
+		}
+		nav {
+			max-width:fit-content;
+			margin-right: 20px;
+			#menu {
+				margin-top: 25px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#masthead {
+		nav {
+			.menu-toggle {
+				display: flex;
+			}
+			#mobile-menu {
+				display: flex !important;
+			}
+			#menu {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#masthead {
+		.custom-logo {
+			max-width: 180px;
+			margin-left: 10px;
+		}
+		nav {
+			#mobile-menu {
+				.fa-bars {
+					margin-top: 15px;
+				}
+				#menu-icons-mobile {
+					margin-top: 15px;
+				}
+				#menu-mobile {
+					.close-menu i{
+						right: -45px;
+						bottom: 250px;
+					}
+				}
+			}
+		}	
+	}
+}

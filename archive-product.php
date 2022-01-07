@@ -29,6 +29,10 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
+
+
+
+	
 <header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
@@ -41,7 +45,6 @@ do_action( 'woocommerce_before_main_content' );
 	 * @hooked woocommerce_taxonomy_archive_description - 10
 	 * @hooked woocommerce_product_archive_description - 10
 	 */
-	do_action( 'woocommerce_archive_description' );
 	?>
 </header>
 <?php
@@ -54,32 +57,83 @@ if ( woocommerce_product_loop() ) {
 	 * @hooked woocommerce_result_count - 20
 	 * @hooked woocommerce_catalog_ordering - 30
 	 */
-	do_action( 'woocommerce_before_shop_loop' );
 
-	woocommerce_product_loop_start();
+
+
 
 	if ( wc_get_loop_prop( 'total' ) ) {
+
+
+
+		?>
+		<section  class="top top-partie">
+				<img src="http://localhost/woocommerce/wp-content/uploads/2022/01/pexels-photo-5655150.png" alt="Baya-Rose">
+				<div><h1><?php echo woocommerce_page_title( '<h1 class="entry-title"></h1>' );?> </h1></div>
+				<img class="illustration-ligne" src="http://localhost/woocommerce/wp-content/uploads/2022/01/Illustration-8.png" alt="Baya-Rose">
+		</section>
+
+		<div class="width-container filter">
+		<?php
+		do_action( 'woocommerce_before_shop_loop' );
+		?>
+		</div>
+		
+		<div class="width-container all-in-archive">
+
+		<?php
+
 		while ( have_posts() ) {
 			the_post();
+			$price= $product->get_price_including_tax();
+			?>
+			
+		
+			<div class="each-in-archive"<?php echo the_ID(); ?>"> 
+				<img src="<?php the_post_thumbnail_url();?>" alt="img">
+				<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );?>
+				
+				<?php if($price) : ?>
+				<p class="price"><?php echo woocommerce_price( $price);?></p>
+				<?php endif; ?>
+				
+			</div>
+			
+
+
+
+
+
+
+			<?php
 
 			/**
 			 * Hook: woocommerce_shop_loop.
 			 */
 			do_action( 'woocommerce_shop_loop' );
 
-			wc_get_template_part( 'content', 'product' );
+		
 		}
+
+		
 	}
 
 	woocommerce_product_loop_end();
-
+	?>
+	</div>	
+<?php
 	/**
 	 * Hook: woocommerce_after_shop_loop.
 	 *
 	 * @hooked woocommerce_pagination - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop' );
-} else {
+} 
+
+
+
+
+
+else {
 	/**
 	 * Hook: woocommerce_no_products_found.
 	 *
@@ -100,6 +154,6 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-do_action( 'woocommerce_sidebar' );
+
 
 get_footer( 'shop' );

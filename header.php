@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+	<script src="wp-content/themes/baya-rose/js/burger-menu.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -28,33 +28,53 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$baya_rose_description = get_bloginfo( 'description', 'display' );
-			if ( $baya_rose_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $baya_rose_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); ?></a>
+		</div>
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'baya-rose' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+			<div id="menu">
+				<div class="menu-container" id="nav-textes">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary',
+						)
+					);
+					?>
+				</div>
+				<div class="menu-container" id="nav-icons">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-nav',
+							'menu_id'        => 'menu-nav-icons',
+						)
+					);
+					?>
+				</div>
+			</div>	
+			<div id="mobile-menu">
+				<div class="menu-container" id="nav-mobile-icons">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-icons-mobile',
+							'menu_id'        => 'menu-icons-mobile',
+						)
+					);
+					?>
+				</div>
+				<i class="fas fa-bars"></i>
+				<div class="menu-container" id="nav-mobile">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-mobile',
+							'menu_id'        => 'menu-mobile',
+						)
+					);
+					?>
+				</div>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

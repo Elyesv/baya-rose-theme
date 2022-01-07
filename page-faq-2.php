@@ -24,7 +24,7 @@ get_header();
 </div>
 
 <div class="contenu">
-<img src="<?php echo get_template_directory_uri(); ?>/img/Illustration 9.png" alt="">
+
    </div>
 		<?php
 		while ( have_posts() ) :
@@ -40,7 +40,7 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 <div class="paiement">
-<img src="<?php echo get_template_directory_uri(); ?>/img/Illustration 8.png" alt="">
+
 </div>
 
 	</main><!-- #main -->

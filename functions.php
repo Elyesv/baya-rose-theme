@@ -52,6 +52,9 @@ function baya_rose_setup() {
 			'menu-1' => esc_html__( 'Primary', 'baya-rose' ),
 			'menu-footer-1' => 'menu footer support',
 			'menu-footer-2' => 'menu footer contact',
+			'menu-nav' => 'menu-nav-icons',
+			'menu-mobile' => 'menu-mobile',
+			"menu-icons-mobile" => "menu-icons-mobile"
 		)
 	);
 
