@@ -57,9 +57,9 @@ if ( woocommerce_product_loop() ) {
 	 * @hooked woocommerce_result_count - 20
 	 * @hooked woocommerce_catalog_ordering - 30
 	 */
-	do_action( 'woocommerce_before_shop_loop' );
 
-	woocommerce_product_loop_start();
+
+
 
 	if ( wc_get_loop_prop( 'total' ) ) {
 
@@ -67,7 +67,7 @@ if ( woocommerce_product_loop() ) {
 
 		?>
 		<section  class="top top-partie">
-				<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-7292977.png" alt="Baya-Rose">
+				<img src="http://localhost/baya-rose/wp-content/uploads/2022/01/pexels-photo-5655150.png" alt="Baya-Rose">
 				<div><h1><?php echo woocommerce_page_title( '<h1 class="entry-title"></h1>' );?> </h1></div>
 				<img class="illustration-ligne" src="http://localhost/baya-rose/wp-content/uploads/2022/01/Illustration-8.png" alt="Baya-Rose">
 		</section>
@@ -154,6 +154,6 @@ do_action( 'woocommerce_after_main_content' );
  *
  * @hooked woocommerce_get_sidebar - 10
  */
-do_action( 'woocommerce_sidebar' );
+
 
 get_footer( 'shop' );
