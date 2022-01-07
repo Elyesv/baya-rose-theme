@@ -100,3 +100,211 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+
+/* Woocommerce
+--------------------------------------------- */
+@import "woocommerce.scss";
+
+/* Font 
+--------------------------------------------- */
+@import url("https://use.typekit.net/ciz0ywj.css");
+
+/* Footer
+--------------------------------------------- */
+.post, .page{
+	margin: 0 !important;
+}
+
+.footer{
+	color: white;
+	font-family: effra, sans-serif; 
+	width: 100%;
+	background-color: #B59D92;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	&-logo {
+		margin-top: 1.5rem;
+	}
+
+	&-content{
+		width: 80%;
+		padding: 1rem 0;
+		margin-top: 2rem;
+		display: flex;
+		justify-content: space-between;
+		@include lg{
+			justify-content: space-evenly;
+		}
+		@include md {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		
+
+		&-desc{
+			max-width: 450px;
+			@include lg {
+				display: none;
+			}
+
+			> p {
+				font-size: 18px;
+				font-weight: 300;
+				margin: 0;
+
+				> span {
+					font-weight: 600;
+				}
+			}
+		}
+
+		&-support{
+
+			> p {
+				margin: 0;
+				font-size: 25px;
+				font-weight: bold;
+			}
+
+			> div > ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				
+				> li > a {
+					color: white;
+				}
+			}
+		}
+
+		&-contact{
+
+			> p:first-child {
+				margin: 0;
+				font-size: 25px;
+				font-weight: bold;
+				@include md{
+					margin-top: 1rem;
+				}
+			}
+
+			> div > ul {
+				display: flex;
+				width: 60%;
+				justify-content: space-between;
+				list-style: none;
+				margin: 1rem 0 0 0;
+				padding: 0;
+				@include md{
+					margin: 1rem auto;
+				}
+				
+				> li > a {
+					color: white;
+				}
+			}
+		}
+	}
+
+	> p {
+		margin-top: 2rem;
+	}
+}
+
+/* Contact
+--------------------------------------------- */
+.hero-bg{
+	background-image: url("../../uploads/2022/01/hero_bg_contact.png");
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	min-height: 845px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include sm{
+		background-position: -450px 0px;
+	}
+
+	&-title{
+		font-size: 70px;
+		color: white;
+		font-family: effra, sans-serif;
+	}
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+	align-items: flex-start;
+
+	&-title{
+		font-size: 32px;
+		font-family: effra, sans-serif;
+		margin-top: 4rem;
+		@include sm{
+			font-size: 20px;
+		}
+	}
+}
+
+
+/* Surcouche Formulaire
+--------------------------------------------- */
+
+.ninja-forms-req-symbol, .nf-form-fields-required{
+	display: none;
+}
+
+.label-above .nf-field-element, .label-below .nf-field-element{
+	width: inherit !important;
+}
+
+.nf-error-msg{
+	margin-bottom: 1rem;
+}
+
+#nf-field-5 , #nf-field-6{
+	width: 450px;
+	border: 2px solid #A4CBAD;
+	background-color: white;
+	@include sm{
+		width: 300px;
+	}
+}
+
+#nf-field-7{
+	width: 900px;
+	border: 2px solid #A4CBAD;
+	background-color: white;
+	@include lg{
+		width: 600px;
+	}
+	@include sm{
+		width: 300px;
+	}
+}
+
+#nf-field-8{
+	width: 300px;
+	background-color: #B59D92;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: effra, sans-serif;
+
+	&:hover{
+		color: wheat;
+	}
+}
+
