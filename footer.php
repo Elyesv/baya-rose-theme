@@ -12,7 +12,7 @@
 ?>
 
 	<footer class="footer">
-		<img class="footer-logo" src="http://localhost/woocommerce/wp-content/uploads/2022/01/logo.png" alt="">
+		<img class="footer-logo" src="wp-content/uploads/2022/01/logo.png" alt="">
 		<div class="footer-content">
 			<div class="footer-content-desc"><p>Pour les coutières débutantes ou confirmées, des <span>patrons de mode</span> modulables et une sélection de <span>tissus upcyclés</span> de grandes maison de couture, pour réaliser des créations de qualité tout en contribuant à une mode plus éthique.</p></div>
 			<div class="footer-content-support">

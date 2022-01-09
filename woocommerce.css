@@ -540,19 +540,21 @@ button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #67836E;
+  border: #67836E 1px solid;
+  cursor: pointer;
 }
 button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
-  border-color: #ccc #bbb #aaa;
+  color: #67836E;
+  background-color: #fff;
+  border: #67836E 1px solid;
 }
 button:active, button:focus,
 input[type=button]:active,
@@ -1392,7 +1394,7 @@ p.no-comments {
 /* Footer
 --------------------------------------------- */
 .post, .page {
-  margin: 0 !important;
+  margin: 0;
 }
 
 .footer {
@@ -1642,7 +1644,6 @@ h1, h2, .entry-title {
 /*Grande Image + description au dessus*/
 .description {
   position: relative;
-  margin-top: 80px;
 }
 .description div {
   position: absolute;
@@ -2137,6 +2138,79 @@ img .top-partie {
     right: -45px;
     bottom: 250px;
   }
+}
+html #primary .post {
+  color: #000;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+html #primary .post .wp-block-image {
+  display: block;
+}
+html #primary .post h1 {
+  font-size: 44px;
+  color: black;
+  font-weight: bold;
+}
+html #primary .post .entry-meta, html #primary .post .entry-footer {
+  margin-left: 2%;
+  font-size: 14px;
+}
+html #primary .post .entry-meta a, html #primary .post .entry-footer a {
+  color: #67836E;
+}
+html #primary .post .entry-meta a:hover, html #primary .post .entry-footer a:hover {
+  color: #A4CBAD;
+}
+html #primary .post .entry-meta .post-edit-link, html #primary .post .entry-footer .post-edit-link {
+  margin-left: 20px;
+}
+html #primary .post figcaption {
+  text-align: center;
+  font-size: 14px;
+}
+
+html #primary #comments {
+  width: 80%;
+  margin-top: 5vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+html #primary #comments h2 {
+  color: #B59D92;
+}
+html #primary #comments .comment-list article a {
+  color: #67836E;
+}
+html #primary #comments .comment-list article a:hover {
+  color: #A4CBAD;
+}
+html #primary #comments .comment-list article .reply a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #67836E;
+  border: #67836E 1px solid;
+}
+html #primary #comments .comment-list article .reply a:hover {
+  color: #67836E;
+  background-color: #fff;
+  border: #67836E 1px solid;
+}
+html #primary #comments #respond h3 {
+  margin-top: 15px;
+}
+html #primary #comments #respond a {
+  color: #67836E;
+}
+html #primary #comments #respond a:hover {
+  color: #A4CBAD;
+}
+html #primary #comments #respond textarea {
+  background-color: white;
+  border: 1px solid #B59D92;
 }
 
 /*# sourceMappingURL=woocommerce.css.map */

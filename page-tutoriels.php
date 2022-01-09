@@ -25,7 +25,7 @@ get_header();
 
 
 			<section  class="top top-partie">
-				<img src="http://localhost/woocommerce/wp-content/uploads/2022/01/pexels-photo-3094422.png" alt="Baya-Rose">
+				<img src="wp-content/uploads/2022/01/pexels-photo-3094422.png" alt="Baya-Rose">
 				<div><h1><?php echo the_title( '<h1 class="entry-title"></h1>' );?> </h1></div>			</section>
 
 			<section class="partie sans-fond">

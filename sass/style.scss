@@ -112,7 +112,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Footer
 --------------------------------------------- */
 .post, .page{
-	margin: 0 !important;
+	margin: 0;
 }
 
 .footer{
@@ -368,8 +368,6 @@ h1, h2, .entry-title{
 /*Grande Image + description au dessus*/
 .description{
 	position: relative;
-	margin-top: 80px;
-
 	div{
 		position: absolute;
 		top: 50%;
@@ -908,4 +906,87 @@ img .top-partie{
 			}
 		}	
 	}
+}
+
+html #primary .post {
+	color: #000;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	.wp-block-image {
+		display: block;
+	}
+	h1 {
+		font-size: 44px;
+		color: black;
+		font-weight: bold;
+	}
+	.entry-meta, .entry-footer {
+		margin-left: 2%;
+		font-size: 14px;
+		a {
+			color: #67836E;
+		}
+		a:hover {
+			color: #A4CBAD;
+		}
+		.post-edit-link {
+			margin-left: 20px;
+		}
+	}
+	figcaption {
+		text-align: center;
+		font-size: 14px;
+	}
+}
+
+html #primary #comments {
+	width: 80%;
+	margin-top: 5vh;
+	margin-left: 10%;
+	margin-right: 10%;
+	h2 {
+		color: #B59D92;
+	}
+	.comment-list {
+		article {
+			a {
+				color: #67836E;
+			}
+			a:hover {
+				color: #A4CBAD;
+			}
+			.reply {
+				a {
+					color: white;
+					font-size: 20px;
+					font-weight: bold;
+					padding: 10px 20px;
+					background-color: #67836E;
+					border: #67836E 1px solid;
+				}
+				a:hover {
+					color: #67836E;
+					background-color: #fff;
+					border: #67836E 1px solid;
+				}
+			}
+		}
+	}
+	#respond {
+		h3 {
+			margin-top: 15px;
+		}
+		a {
+			color: #67836E;
+		}
+		a:hover {
+			color: #A4CBAD;
+		}
+		textarea {
+			background-color: white;
+			border: 1px solid #B59D92;
+		}
+	}
+	
 }

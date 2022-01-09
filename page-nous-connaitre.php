@@ -25,14 +25,14 @@ get_header();
 
 
 			<section  class="top top-partie">
-				<img src="http://localhost/woocommerce/wp-content/uploads/2022/01/pexels-photo-7292977.png" alt="Baya-Rose">
+				<img src="wp-content/uploads/2022/01/pexels-photo-7292977.png" alt="Baya-Rose">
 				<div><h1><?php echo the_title( '<h1 class="entry-title"></h1>' );?> </h1></div>
 			</section>
 
 
 			<section class="partie fond">
 				<div class="div-flex width-container">
-				<img src="http://localhost/woocommerce/wp-content/uploads/2022/01/pexels-photo-847483.png" alt="Environnement Liberté">
+				<img src="wp-content/uploads/2022/01/pexels-photo-847483.png" alt="Environnement Liberté">
 					<div>
 						<h2>RESPECT DE L’ENVIRONNEMENT</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -50,7 +50,7 @@ get_header();
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 						ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 					</div>
-					<img src="http://localhost/woocommerce/wp-content/uploads/2022/01/pexels-photo-6412282.png" alt="Environnement Liberté">
+					<img src="wp-content/uploads/2022/01/pexels-photo-6412282.png" alt="Environnement Liberté">
 				
 				</div>
 			</section>

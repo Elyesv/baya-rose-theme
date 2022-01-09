@@ -67,9 +67,9 @@ if ( woocommerce_product_loop() ) {
 
 		?>
 		<section  class="top top-partie">
-				<img src="http://localhost/woocommerce/wp-content/uploads/2022/01/pexels-photo-5655150.png" alt="Baya-Rose">
-				<div><h1><?php echo woocommerce_page_title( '<h1 class="entry-title"></h1>' );?> </h1></div>
-				<img class="illustration-ligne" src="http://localhost/woocommerce/wp-content/uploads/2022/01/Illustration-8.png" alt="Baya-Rose">
+				<img src="../../../../woocommerce-bayarose/wp-content/uploads/2022/01/pexels-photo-5655150.png" alt="Baya-Rose">
+				<div><h1 class="h1_woo"><?php echo woocommerce_page_title( '<h1 class="entry-title"></h1>' );?> </h1></div>
+				<img class="illustration-ligne" src="../../../../woocommerce-bayarose/wp-content/uploads/2022/01/Illustration-8.png" alt="Baya-Rose">
 		</section>
 
 		<div class="width-container filter">
